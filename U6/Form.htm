@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>ICT Solutions</title>
+<link href="VFstyles.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 275%;
+  max-height:300%;
+}
+
+.text {
+  font-size: 15px;
+  padding-left: 150px;
+}
+    .same-size-img {
+        width: 400px; 
+        height: 125px; 
+}
+form {
+    margin-top: 20px;
+    border: 3px solid #006400;
+    padding: 20px; 
+    color: #FFA500;
+}
+</style>
+<body>
+<!-- The page div will handle the background colour of the main content, this will be consistent across all pages -->
+<div id="page">
+<img src="images/ICTSolutionsLogo.png" alt="ICT Solutions Banner Image">
+<img src="images/Banner.jpg" alt="ICT Solutions Banner Image" width="590" height="300">
+<!-- The navigation div will contain the website navigation bar, this will be consistant across pages -->
+<div id="navigation">
+<button style="background-color:#Bcffb8;border-radius:10px">
+<a href="index.htm">Homepage</a>
+</button>
+<button style="background-color:#Bcffb8;border-radius:10px">
+<a href="ExtTrainee.htm">Existing Trainees</a>
+</button> 
+<button style="background-color:#Bcffb8;border-radius:10px">
+<a href="jobs.htm">Job Spec & Quals</a>
+</button>
+<button style="background-color:#Bcffb8;border-radius:10px">
+<a href="form.htm">Online Form</a>
+</button>
+<button style="background-color:#Bcffb8;border-radius:10px">
+<a href="webdev.htm">Web Development Courses</a>
+</button>
+<!-- This closes the 'navigation' div tag -->
+</div>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+	    float: left;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" required>
+
+        <label for="cv">Please upload your CV here:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
+
