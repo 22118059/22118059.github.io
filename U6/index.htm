@@ -11,17 +11,23 @@
 }
 
 img {
-  max-width: 300%;
-  max-height:300%;
+  max-width: 450%;
+  max-height:450%;
 }
 
 .text {
   font-size: 15px;
-  padding-left: 150px;
+  padding-left: 180px;
 }
     .same-size-img {
         width: 220px; 
-        height: 150px; 
+        height: 200px; 
+}
+p{
+font-size: 20px;
+padding-left: 250px;
+text-decoration-line:
+underline;
 }
 </style>
 <body>
@@ -46,6 +52,19 @@ img {
 <button style="background-color:#Bcffb8;border-radius:10px">
 <a href="webdev.htm">Web Development Courses</a>
 </button>
+<div id="greeting"></div>
+<script>
+    var currentHour = new Date().getHours();
+    var greeting;
+    if (currentHour >= 5 && currentHour < 12) {
+        greeting = "Good morning, Welcome to the ICT Solutions Website!";
+    } else if (currentHour >= 12 && currentHour < 18) {
+        greeting = "Good afternoon, Welcome to the ICT Solutions Website!";
+    } else {
+        greeting = "Good evening, Welcome to the ICT Solutions Website!";
+    }
+    document.write("<p>" +greeting+"</p>");
+</script>
 <!-- This closes the 'navigation' div tag -->
 </div>
 <!--The maincontent div will contain the content for each page, this content will change across pages -->
@@ -56,7 +75,7 @@ img {
 <img src="images/companyWorkers.jpg" alt="Company Workers Image">
 </div>
 <div class="text">
-<p>ICTSolutions is a leading ICT company focused on providing customized technology solutions for businesses. From software and app development to IT consulting and cybersecurity, we offer a range of services to help clients thrive in the digital age. With a commitment to excellence, we empower organizations to navigate and leverage the latest technologies effectively, driving growth and innovation.</p>
+<p1>ICTSolutions is a leading ICT company focused on providing customised technology solutions for businesses. From software and app development to IT consulting and cybersecurity, we offer a range of services to help clients thrive in the digital age. With a commitment to excellence, we empower organisations to navigate and leverage the latest technologies effectively, driving growth and innovation. We also have a range of courses for you to look at and dig deep into and explore allowing you to expand your knowledge and be ready for more oppurnities inside the company.</p1>
 </div>
 </div>
 </div>
